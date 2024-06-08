@@ -1,6 +1,5 @@
 
 from tkinter import *
-from tkinter import filedialog, messagebox
 import os
 
 first_num = second_num = operator = None
