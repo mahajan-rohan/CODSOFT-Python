@@ -69,7 +69,6 @@ result_label = Label(window, text='', bg="black", fg="white")
 result_label.grid(row=1, column=0, columnspan=4, pady=(5, 25), sticky='w')
 result_label.config(font=("verdana", 30, "bold"))
 
-# Button configurations
 button_config = {
     'font': ("Helvetica Neue", 20),
     'width': 5,
@@ -78,13 +77,11 @@ button_config = {
     'bd': 0
 }
 
-# Colors
 digit_color = "#333333"
 operator_color = "#FF9500"
 function_color = "#A5A5A5"
 text_color = "white"
 
-# Digit buttons
 btn7 = Button(window, text="7", bg=digit_color, fg=text_color, command=lambda: get_digit(7), **button_config)
 btn7.grid(row=2, column=0, padx=2, pady=2)
 
@@ -115,7 +112,6 @@ btn3.grid(row=4, column=2, padx=2, pady=2)
 btn0 = Button(window, text="0", bg=digit_color, fg=text_color, command=lambda: get_digit(0), **button_config)
 btn0.grid(row=5, column=1, padx=2, pady=2)
 
-# Operator buttons
 btn_add = Button(window, text="+", bg=operator_color, fg=text_color, command=lambda: get_operator('+'), **button_config)
 btn_add.grid(row=2, column=3, padx=2, pady=2)
 
@@ -128,7 +124,6 @@ btn_multi.grid(row=4, column=3, padx=2, pady=2)
 btn_div = Button(window, text="/", bg=operator_color, fg=text_color, command=lambda: get_operator('/'), **button_config)
 btn_div.grid(row=5, column=3, padx=2, pady=2)
 
-# Function buttons
 btn_clr = Button(window, text="C", bg=function_color, fg="black", command=clear, **button_config)
 btn_clr.grid(row=5, column=0, padx=2, pady=2)
 
@@ -138,4 +133,3 @@ btn_ans.grid(row=5, column=2, padx=2, pady=2)
 window.mainloop()
 
 
-# ---------------------------------------------------------------------------------------------------------------------------------------------------
