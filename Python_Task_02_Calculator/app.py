@@ -126,7 +126,7 @@ btn_div.grid(row=5, column=3, padx=2, pady=2)
 btn_clr = Button(window, text="C", bg=function_color, fg="black", command=clear, **button_config)
 btn_clr.grid(row=5, column=0, padx=2, pady=2)
 
-btn_ans = Button(window, text="=", bg=operator_color, fg="black", command=get_ans, **button_config)
+btn_ans = Button(window, text="=", bg=function_color, fg="black", command=get_ans, **button_config)
 btn_ans.grid(row=5, column=2, padx=2, pady=2)
 
 window.mainloop()
