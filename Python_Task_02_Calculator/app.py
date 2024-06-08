@@ -132,4 +132,3 @@ btn_ans.grid(row=5, column=2, padx=2, pady=2)
 
 window.mainloop()
 
-
