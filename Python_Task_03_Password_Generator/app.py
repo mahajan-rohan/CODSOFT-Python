@@ -1,5 +1,5 @@
 from tkinter import *
-import pyperclip # type: ignore
+import pyperclip 
 import os
 import string
 import random
